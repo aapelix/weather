@@ -1,0 +1,35 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "weather": "index.js",
+    "w": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "aapelix",
+    "email": "hello@aapelix.dev",
+    "url": "https://aapelix.dev"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "utils"
+  ],
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chalk-animation": "^2.0.3",
+    "cli-welcome": "^2.2.3",
+    "figlet": "^1.7.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^10.0.1",
+    "nanospinner": "^1.1.0"
+  }
+}

@@ -7,7 +7,6 @@ import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
 import { createSpinner } from "nanospinner";
 import welcome from "cli-welcome";
-import getPackageJsonInfo from "./utils/getPkg.js";
 import getLocation from "./lib/getLoc.js";
 import getWeather from "./lib/getWeather.js";
 
@@ -15,14 +14,11 @@ const args = process.argv;
 const input = args[2];
 const params = args.slice(3, args.length);
 
-const pkg = await getPackageJsonInfo();
-
 if (input) {
   welcome({
-    title: pkg.name,
+    title: "weather",
     tagLine: `by aapelix`,
-    description: `${pkg.description}`,
-    version: pkg.version,
+    version: "1.0.2",
     bgColor: "#375aef",
     color: "#000000",
     bold: true,
@@ -37,10 +33,10 @@ if (input) {
   }
 } else {
   welcome({
-    title: pkg.name,
+    title: "weather",
     tagLine: `by aapelix`,
     description: `For help use 'w help'`,
-    version: pkg.version,
+    version: "1.0.2",
     bgColor: "#375aef",
     color: "#000000",
     bold: true,

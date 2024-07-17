@@ -18,7 +18,7 @@ if (input) {
   welcome({
     title: "weather",
     tagLine: `by aapelix`,
-    version: "1.0.2",
+    version: "1.0.3",
     bgColor: "#375aef",
     color: "#000000",
     bold: true,
@@ -36,7 +36,7 @@ if (input) {
     title: "weather",
     tagLine: `by aapelix`,
     description: `For help use 'w help'`,
-    version: "1.0.2",
+    version: "1.0.3",
     bgColor: "#375aef",
     color: "#000000",
     bold: true,
